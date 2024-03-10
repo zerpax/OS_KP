@@ -1,0 +1,16 @@
+job1: 
+  dep : []
+  command: 
+   
+job2: 
+  dep : []
+  command: ls
+job3: 
+  dep : [job1, job2]
+  command: ps
+job4: 
+  dep : [job3]
+  command: ls
+job5:
+  dep : [job3]
+  command: ls
